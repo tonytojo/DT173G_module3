@@ -1,20 +1,39 @@
-//A template that is used for buttons
+//A template that is used for buttons,anchor, submit button
 %btn
 {
-   display:inline-block;
-   border-radius: 10px;
-   padding:5px 15px;
-   margin:5px;
-
-   &:hover
-   {
-      transform: scale(.98);
-   }
+   background-color: $linkbtn-bgcolor;
+   color: $linkbtn-fgcolor;
+   padding:5px;
+   cursor: pointer;
 }
 
 //Here we style the class btn
 .btn
 {
    @extend %btn;
-   @include setBackground(lighten($primary-color, 10));
+}
+
+input[type=submit]
+{
+   @extend %btn;
+   padding: 12px 20px;
+   border: none;
+   float: right;
+   margin-top: 5px;
+}
+
+a
+{
+  @extend %btn;
+  text-decoration: none;
+  padding:5px;
+}
+
+
+.reset
+{
+   @extend %btn;
+   float: right;
+   padding: 12px 20px;
+   margin-right: 5px;
 }

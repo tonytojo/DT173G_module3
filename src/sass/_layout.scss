@@ -1,33 +1,8 @@
 //The wrapper is stretching from top to bottom
 //We center 1280px so we get space on each side
-.wrapper{
-   max-width: 1040px;
-   margin:0 auto;
-   @include setBackground($primary-color);
-}
 
-//Handle margin and padding classes
-$numArray:(1,2,3,4,5);
 
-@each $num in $numArray
+.container
 {
-   .m-#{$num}
-   {
-      margin:#{$num}rem;
-   }
-
-   .my-#{$num}
-   {
-      margin:#{$num}rem 0;
-   }
-
-   .p-#{$num}
-   {
-      padding:#{$num}rem;
-   }
-
-   .py-#{$num}
-   {
-      padding:#{$num}rem 0;
-   }
+   text-align: center;
 }

@@ -1,9 +1,27 @@
-$font-stack: Arial, Helvetica, sans-serif;
-$primary-color:#0c0c0c; //d3d3d3;
-$nav-color : #a2fba2; //green
-$secondary-color:#add8e6; //blue
+//Some useful variables
+$form-bgcolor : #d9d9d9;
+$linkbtn-bgcolor : #0082f0;
+$linkbtn-fgcolor :#fff;
+
+label 
+{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+h1
+{
+   margin-bottom: 20px;
+}
+
+
+h1,h2
+{
+   text-align: center;
+}
 
 //Set text color based om background so it wil be readable
+//A function that make make contrast between fg and bg
 @function setTextColor($color)
 {
    @if(lightness($color) > 70)

@@ -4,67 +4,77 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>DT173G Moment 3</title>
-   <link rel="stylesheet" href="css/styles.css">
-
-   <meta name="format-detection" content="telephone=no" />
+   <title>DT173G Moment 5 REST-webbtjänster</title>
+   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <body>
-   <!-- The wrapper is stretching from top to bottom -->
-   <div class="wrapper">
+   <header>
+      <h1>DT173G Moment 5 REST-webbtjänster</h1>
+   </header>
 
-      <!-- The header contains the nav menu, logo and header image -->
-      <header class="header">
+   <h2>Kurser jag läst</h2>
 
-        <!--  The navigation menu -->
-         <nav>
+   <div class="container">
+      <table id="sources" class="tblpost">
+      </table>
+   
 
-            <!-- The logo icon is clickable -->
-            <a href="#">
-               <img src="images/logo.png" alt="Two horseshoe representing logo">
-            </a>
-            
-            <!-- Here we have the actual navigation menu -->
-            <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Food</a></li>
-               <li><a href="#">Jumping</a></li>
-               <li><a href="#">Vet</a></li>
-               <li><a href="#">Equipment</a></li>
-            </ul>
-         </nav>
+   <h2>Lägg till kurs</h2>
 
-         <!-- The header image stretching across the width -->
-         <img src="images/jumping.jpg" alt="Hästhoppning">
-      </header>
-
-      <!-- The content section -->
-      <main class="content">
-         <div>
-            <h1>Torps website</h1>
-            <h2>Make your horse win</h2>
-            <p class="info">
-               "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-            </p>
-
-            <!-- Some utility anchor button -->
-            <div class="utility-btn">
-               <a href="#" class="btn"> Learn More About Horses</a>
-               <a href="#" class="btn">Sign Up to Torp</a>
+   
+      <form id="myform">
+         <!--  Input Kurskod -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="code">Kurskod</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="code" name="code">
             </div>
          </div>
 
-         <!-- An image showing two horses -->
-         <img src="images/horse.jpg" alt="Två hästar och en tjej">
-      </main>
+         <!--  Input Kursnamn -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="name">Kursnamn</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="name" name="name">
+            </div>
+         </div>
 
-      <!-- A footer that display some information -->
-      <footer>
-         <p>DT173G Moment III Webbutveckling III</p>
-      </footer>
-   </div> <!-- end wrapper -->
- 
+         <!-- Input Progression -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="progression">Progression</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="progression" name="progression">
+            </div>
+         </div>
+
+         <!-- Input Kursplan -->
+         <div class="rad">
+            <div class="col-25">
+               <label for="plan">Kursplan</label>
+            </div>
+            <div class="col-75">
+               <input type="text" id="plan" name="plan">
+            </div>
+         </div>
+
+         <div class="rad">
+            <input id="addCourse" type="submit" value="Lägg till kurs">
+            <input class="reset" type="reset" value="Reset">
+         </div>
+      </form>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+
    <script src="js/main.js"></script>
 </body>
+
 </html>

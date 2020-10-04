@@ -1,0 +1,46 @@
+.tblpost{
+   border-collapse:collapse;
+   margin-bottom: 30px;
+   display: inline-block;
+   
+}
+
+td, th {
+   border: 1px solid black;
+   padding:8px;
+ }
+
+th{
+   text-align: left;
+}
+
+td:not(.plan) {
+   -webkit-user-modify: read-write;
+   -moz-user-modify: read-write;
+   -user-modify: read-write;
+}
+
+#sources tbody:nth-child(odd)
+{
+  background-color:lightblue;
+}
+
+.code,.delete,.update
+{
+  width:80px;
+}
+
+.name
+{
+  width:180px;
+}
+
+.progression
+{
+  width:40px;
+}
+
+.plan
+{
+  width:110px;
+}

@@ -1,0 +1,38 @@
+form
+{
+  border:1px solid #000;
+  width:680px;
+  //float:left;
+  background-color: $form-bgcolor;
+  //padding: 30px;
+  //margin-right: 1em;
+  margin-bottom: 1em;
+  clear: both;
+  display: inline-block;
+}
+
+  /* Style the input, select and textarea */
+  input[type=text]
+  {
+     width: 100%;
+     padding: 13px;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+     font-size:1.1em;
+   }
+
+   label 
+   {
+     //padding: 12px 12px 12px 0;
+     float: left;
+     height:6px;
+     margin-left: 8px;
+   }
+
+   .col-25 
+   {
+     float: left;
+     width: 25%;
+     margin-top: 6px;
+   }
+   
